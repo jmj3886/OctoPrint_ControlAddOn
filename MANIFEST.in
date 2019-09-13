@@ -1,0 +1,4 @@
+include README.md
+recursive-include OctoPrint_ControlAddOn/templates *
+recursive-include OctoPrint_ControlAddOn/translations *
+recursive-include OctoPrint_ControlAddOn/static *

@@ -1,0 +1,8 @@
+<!-- ko allowBindings: true -->
+<div class="jog-panel" id="OctoPrint_ControlAddOn" style="display: none;">
+    <h1>AddOn Controls</h1>
+    <div data-bind="foreach: OctoPrint_ControlAddOn_profiles">
+        <button class="btn btn-block control-box" data-bind="click: $parent.executeCommand, text: name, enable: $parent.control.isOperational() && !$parent.control.isPrinting()">Default  (before bind)</button>
+    </div>
+</div>
+<!-- /ko -->

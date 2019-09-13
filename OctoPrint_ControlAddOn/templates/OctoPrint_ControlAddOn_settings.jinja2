@@ -1,0 +1,27 @@
+<!-- ko allowBindings: true -->
+<form id="settings_plugin_OctoPrint_ControlAddOn_form" class="form-horizontal">
+    <h3>{{ _('Control Addons') }}</h3>
+    <div class="row-fluid">
+        <div class="span5"><h4>{{ _('Name') }}</h4></div>
+        <div class="span5"><h4>{{ _('Command') }}</h4></div>
+    </div>
+    <div data-bind="foreach: settings.settings.plugins.OctoPrint_ControlAddOn.OctoPrint_ControlAddOn_profiles">
+        <div class="row-fluid" style="margin-bottom: 5px">
+            <div class="span5">
+                <input type="text" class="span12 text-right" data-bind="value: name">
+            </div>
+            <div class="input-append span5">
+                <input type="text" class="span12 text-right" data-bind="value: command, attr: { 'title': 'Command to be sent' }">
+            </div>
+            <div class="span2">
+                <button title="Remove Webcam" class="btn btn-danger" data-bind="click: $parent.removeOctoPrint_ControlAddOnProfile, attr: { 'title': 'Remove Webcam' }"><i class="fa fa-trash-o"></i></button>
+            </div>
+        </div>
+    </div>
+    <div class="row-fluid">
+        <div class="offset10 span2">
+            <button title="Add Addon" class="btn btn-primary" data-bind="click: addOctoPrint_ControlAddOnProfile"><i class="fa fa-plus"></i></button>
+        </div>
+    </div>
+</form>
+<!-- /ko -->
