@@ -1,6 +1,6 @@
 # OctoPrint_ControlAddOn
 
-**TODO:** Describe what your plugin does.
+Gives the ability to add buttons to the "Control" screen that send and perform GCode commands without going to the terminal.
 
 ## Setup
 
@@ -8,9 +8,6 @@ Install via the bundled [Plugin Manager](https://github.com/foosel/OctoPrint/wik
 or manually using this URL:
 
     https://github.com/jmj3886/OctoPrint_ControlAddOn/archive/master.zip
-
-**TODO:** Describe how to install your plugin, if more needs to be done than just installing it via pip or through
-the plugin manager.
 
 ## Configuration
 
